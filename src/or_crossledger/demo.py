@@ -1,0 +1,21 @@
+"""Deterministic synthetic input; no customer data."""
+DEMO = {
+    "left": [
+        {
+            "id": "l1",
+            "amount": "100.00",
+            "currency": "CHF",
+            "occurred_at": "2026-01-01T10:00:00Z",
+            "reference": "settlement-1"
+        }
+    ],
+    "right": [
+        {
+            "id": "r1",
+            "amount": "100",
+            "currency": "CHF",
+            "occurred_at": "2026-01-01T10:00:30Z",
+            "reference": "settlement-1"
+        }
+    ]
+}
