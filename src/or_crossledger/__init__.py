@@ -1,8 +1,9 @@
 """Public API for OR CrossLedger."""
 
+from .grouping import reconcile_groups
 from .reconciliation import reconcile
 
-__version__ = "0.2.0"
+__version__ = "0.3.0"
 
 
 def project_info() -> dict[str, str]:
@@ -13,5 +14,5 @@ def project_info() -> dict[str, str]:
     }
 
 
-__all__ = ["project_info", "reconcile"]
+__all__ = ["project_info", "reconcile", "reconcile_groups"]
 

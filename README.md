@@ -13,6 +13,7 @@ Reconciliation errors can hide operational breaks or create false investigative 
 - Optional source and destination account agreement.
 - Permutation-invariant results and explicit ambiguous/unmatched queues.
 - Metrics and review flags for weaker matches.
+- Bounded many-to-one settlement matching with explicit competing combinations.
 - CLI, optional authenticated API, Docker image, and CI.
 
 ## Run
@@ -27,4 +28,4 @@ API: set `OR_API_KEY` to at least 16 characters, run `uvicorn or_crossledger.api
 
 ## Limitations and roadmap
 
-This is not a settlement engine and does not infer a match from approximate text or FX conversion. It has no ISO 20022 adapters, fee handling, split/merge reconciliation, reversals, durable exception queue, or accounting controls. Next steps are typed source adapters, provenance per normalized field, configurable tolerances by rail, reconciliation aging, and reviewed-match feedback.
+Set `action` to `groups` for many-to-one reconciliation; grouped matches remain review-required. This is not a settlement engine and does not infer a match from approximate text or FX conversion. It has no ISO 20022 adapters, fee handling, reversals, durable exception queue, or accounting controls. Next steps are typed source adapters, provenance per normalized field, tolerances by rail, reconciliation aging, and reviewed-match feedback.
